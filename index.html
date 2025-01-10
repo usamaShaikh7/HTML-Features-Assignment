@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Features Assignment</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        header, nav, main, aside, footer {
+            padding: 10px;
+            margin: 10px;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 15px;
+        }
+        iframe {
+            width: 100%;
+            height: 300px;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>My Personal Portfolio</h1>
+        <!-- Navigation Menu -->
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Section -->
+    <main>
+        <!-- Article Section -->
+        <article id="home">
+            <h2>Welcome to My Portfolio</h2>
+            <p>This is a brief description of my work and projects. Below is a sample video showcasing one of my projects.</p>
+            <iframe src="https://www.youtube.com/embed/example" title="YouTube video example"></iframe>
+        </article>
+
+        <!-- Section -->
+        <section id="about">
+            <h2>About Me</h2>
+            <p>I am a web developer with a passion for creating responsive and user-friendly web applications. This page demonstrates the use of various HTML5 elements.</p>
+        </section>
+
+        <!-- Aside Section -->
+        <aside>
+            <h3>Related Links</h3>
+            <ul>
+                <li><a href="https://www.w3schools.com">Learn HTML</a></li>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML">MDN HTML Documentation</a></li>
+            </ul>
+        </aside>
+
+        <!-- Contact Form Section -->
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <form action="#" method="post">
+                <fieldset>
+                    <legend>Contact Information</legend>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required><br><br>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required><br><br>
+
+                    <label for="message">Message:</label><br>
+                    <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
+
+                    <label for="topic">Select Topic:</label>
+                    <select id="topic" name="topic">
+                        <option value="general">General Inquiry</option>
+                        <option value="feedback">Feedback</option>
+                        <option value="support">Support</option>
+                    </select><br><br>
+
+                    <button type="submit">Submit</button>
+                </fieldset>
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2025 Osama Shaikh. All Rights Reserved.</p>
+        <p><a href="#home">Back to Top</a></p>
+    </footer>
+
+    <!-- Comments -->
+    <!-- This webpage demonstrates the use of HTML5 semantic elements, embedded content, and forms. -->
+</body>
+</html>
